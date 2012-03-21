@@ -14,9 +14,9 @@ bool moved[SIZE_OF_LIST];
 bool allMoved()
 {
 	int countOfNotMoved = 0;
-	for(int i = 0; i < SIZE_OF_LIST; i++)
+	for(int index = 0; index < SIZE_OF_LIST; index++)
 	{
-		if(moved[i] == false)
+		if(moved[index] == false)
 		{
 			countOfNotMoved++;
 		}
