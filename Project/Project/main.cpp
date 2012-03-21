@@ -72,9 +72,9 @@ void removeAllMoved()
  */
 bool isSorted()
 {
-	for(int i = 0; i < SIZE_OF_LIST - 1; i++)
+	for(int index = 0; index < SIZE_OF_LIST - 1; index++)
 	{
-		if(numbers[i] > numbers[i + 1])
+		if(numbers[index] > numbers[index + 1])
 		{
 			return false;
 		}
@@ -88,11 +88,11 @@ int main()
 	unsigned int counter = 0;
 
 	//Create the list of random numbers
-	for(int i = 0; i < SIZE_OF_LIST; i++)
+	for(int index = 0; index < SIZE_OF_LIST; index++)
 	{
-		numbers[i] = rand() % 1000;
-		moved[i] = false;
-		cout << numbers[i] << " ";
+		numbers[index] = rand() % 1000;
+		moved[index] = false;
+		cout << numbers[index] << " ";
 	}
 	cout << endl;
 	cout << "Working" << endl;
@@ -110,9 +110,9 @@ int main()
 	cout << "done" << endl;
 
 	//Output sorted list
-	for(int i = 0; i < SIZE_OF_LIST; i++)
+	for(int index = 0; index < SIZE_OF_LIST; index++)
 	{
-		cout << numbers[i] << " ";
+		cout << numbers[index] << " ";
 	}
 	cout << endl;
 	cout << "Iterations: " << counter << endl;
